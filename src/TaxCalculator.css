@@ -1,0 +1,177 @@
+body {
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #141e30, #243b55);
+    background-size: cover; /* Ensures the gradient covers full height */
+    background-attachment: fixed; /* Prevents scrolling from affecting the gradient */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .form-tt{
+
+    font-size: 20px;
+    color: #fcfbfb;
+    
+  }
+  
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all form elements */
+    gap: 15px; /* Adds spacing between elements */
+  }
+  
+  input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: #1e2a3a;
+    color: white;
+    font-size: 16px;
+    text-align: center; /* Centers the input text */
+  }
+  
+  /* Center checkbox label */
+  .checkbox-group {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  button {
+    width: 85%;
+    padding: 12px;
+    background: #0070f3;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #010954;
+  }
+  /* Error Message */
+  .alert {
+    background: #ff4d4d;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  /* Results Section */
+  .results {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .results p {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+  
+  .total-tax {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffcc00;
+  }
+  
+  /* Tax Slabs Section */
+  .tax-slabs {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .tax-slabs h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .tax-slabs ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tax-slabs li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .tax-slabs li:last-child {
+    border-bottom: none;
+  }
+  
+  .tax-rate {
+    font-weight: bold;
+    color: #00ff99;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    input[type="number"] {
+        width: 70%;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #555;
+        border-radius: 6px;
+        background: #1e2a3a;
+        color: white;
+        font-size: 12px;
+      }
+  
+    .results p {
+      font-size: 14px;
+    }
+  
+    .tax-slabs h3 {
+      font-size: 18px;
+    }
+  
+    .tax-slabs li {
+      font-size: 14px;
+    }
+  }
+  

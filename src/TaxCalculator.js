@@ -118,8 +118,9 @@ const TaxCalculator = () => {
           <li><span>Up to ₹4,00,000</span><span className="tax-rate">NIL</span></li>
           <li><span>₹4,00,001 - ₹8,00,000</span><span className="tax-rate">5%</span></li>
           <li><span>₹8,00,001 - ₹12,00,000</span><span className="tax-rate">10%</span></li>
-          <li><span>₹12,00,001 - ₹16,00,000</span><span className="tax-rate">10%</span></li>
-          <li><span>₹16,00,001 - ₹20,00,000</span><span className="tax-rate">10%</span></li>
+          <li><span>₹12,00,001 - ₹16,00,000</span><span className="tax-rate">15%</span></li>
+          <li><span>₹16,00,001 - ₹20,00,000</span><span className="tax-rate">20%</span></li>
+          <li><span>₹20,00,001 - ₹24,00,000</span><span className="tax-rate">25%</span></li>
           <li><span>Above ₹24,00,000</span><span className="tax-rate">30%</span></li>
         </ul>
       </div>
